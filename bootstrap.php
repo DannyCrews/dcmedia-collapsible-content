@@ -28,6 +28,8 @@ You should have received a copy of the GNU General Public License along with DCM
 
 namespace DCMedia\CollapsibleContent;
 
-function plugin_launch() {
-
+if ( ! defined( 'ABSPATH' ) ) {
+	die( "Oh, silly, there's nothing to see here.");
 }
+
+include __DIR__ . '/src/shortcode/shortcodes.php' ;
